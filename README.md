@@ -141,6 +141,10 @@
 
 * [傑森創工智慧車底盤組裝教學](http://jmaker.banner.tw/doc/car_info.pdf)
 
+* [Raspberry使用L298N操作兩個馬達](https://sites.google.com/site/zsgititit/home/raspberry-shu-mei-pai/raspberry-shi-yongl298n-cao-zuo-liang-ge-ma-da)
+
+* [Flask Documentation Quickstart](https://flask.palletsprojects.com/en/2.2.x/quickstart/#routing)
+
 
 
 
