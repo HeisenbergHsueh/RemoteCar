@@ -1,0 +1,42 @@
+<!DOCTYPE html>   
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>111中央大學-大數據與物聯網-期末專題</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+  function motor(remote_param) {
+    //當操作者點擊下方的按鈕(onClick事件)，就會觸發這個script
+    //此script會在URL的最後加入傳遞進來的參數(remote_param)
+    //當將參數加上URL之後會接著觸發flask的參數傳遞，將參數傳往後端的python script
+    //python script接收到參數之後，就會觸發raspberry pi對車子進行操作
+    window.location.href='/' + remote_param  
+  }
+</script>
+</head>
+<body>
+<div data-role="page">
+  <div data-role="header">
+    <h2 style="text-align: center;">111中央大學-大數據與物聯網-期末專題</h1>
+  </div>
+  <div data-role="main" class="ui-content"> 
+    <div id="control">     
+      <div class="ui-grid-b">
+        <div class="ui-block-a"><span></span></div>
+        <div class="ui-block-b"><span><a id="f" onClick="motor('f')" class="ui-btn">前進</a></span></div>
+        <div class="ui-block-c"><span></span></div>
+        <div class="ui-block-a"><span><a id="l" onClick="motor('l')" class="ui-btn">往左轉</a></span></div>
+        <div class="ui-block-b"><span><a id="s" onClick="motor('s')" class="ui-btn">停止</a></span></div>
+        <div class="ui-block-c"><span><a id="r" onClick="motor('r')" class="ui-btn">向右轉</a></span></div>
+        <div class="ui-block-a"><span></span></div>
+        <div class="ui-block-b"><span><a id="b" onClick="motor('b')" class="ui-btn">倒退</a></span></div>
+        <div class="ui-block-c"><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer"></div>
+</div>
+</body>
+</html>
